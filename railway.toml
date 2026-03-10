@@ -1,8 +1,0 @@
-[build]
-dockerfile = "Dockerfile"
-
-[deploy]
-startCommand = "node prisma/seed.js || true && npm start"
-healthcheckPath = "/"
-healthcheckTimeout = 300
-restartPolicyType = "ON_FAILURE"
